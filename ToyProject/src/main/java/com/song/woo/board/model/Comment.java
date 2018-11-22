@@ -19,10 +19,13 @@ public class Comment {
 		@Id
 		@GeneratedValue(strategy = GenerationType.AUTO) 
 		private long commentSeq;
+		
 		@Column
 		private String fk_comment_post;
+		
 		@Column
 		private String content;
+		
 		@Column
 		private String writer;
 	}
